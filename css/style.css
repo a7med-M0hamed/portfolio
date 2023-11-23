@@ -1,0 +1,243 @@
+*{
+    padding: 0;
+    margin: 0 ;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+img{
+    width: 100%;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+.header{
+    background-image: linear-gradient(to right , #0575e6 , #021b79);
+    height: 100vh;
+    overflow:auto;
+    position: relative;
+}
+.header .navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+}
+.header .navbar h1{
+    font-size: 30px;
+    font-family: 'Lobster', sans-serif;
+    color: white;
+    transition: all 0.5s;
+}
+.header .navbar h1:hover{
+    color: black;
+    font-size: 35px;
+}
+.header .navbar ul{
+    display: flex;
+}
+.header .navbar ul li{
+    list-style: none;
+    padding: 25px;
+    font-size: 15px;
+    color: white;
+    font-family: 'Lilita One', sans-serif;
+    transition: all 0.5s;
+}
+.header .navbar ul li:hover{
+    background-color: black;
+    opacity: 0.8;
+    border-radius: 10px;
+}
+.header .navbar ul span{
+    background-color: black;
+    border-radius: 10px;
+}
+.header .land{
+    display: flex;
+    justify-content: space-around;
+}
+.header .land .text{
+    text-align: center;
+    position: absolute;
+    top: 37%;
+    left: 11%;
+}
+.header .land .text p{
+    font-size: 30px;
+    font-family: 'Playpen Sans', cursive;
+}
+.header .land .text h1{
+    font-size: 45px;
+    font-family: 'Kenia', sans-serif;
+    color:rgb(134, 9, 9);
+    padding: 20px ;
+}
+.header .land .text h1::before{
+    width: 200px;
+    height: 4px;
+    background-color: white;
+    position: absolute;
+    bottom: -20px;
+    left: 100px;
+    content: "";
+}
+.header .land .text h1::after{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 3px solid black;
+    background-image: linear-gradient(to right bottom , #0575e6 , #021b79);
+    position: absolute;
+    bottom: -35px;
+    left: 47%;
+    content: "";
+    transition: all 0.5s;
+}
+.header .land .text:hover h1::after{
+    position: absolute;
+    bottom: -35px;
+    left: 60%;
+}
+.header .land .text h4{
+    font-size: 35px;
+    font-family: 'Kenia', sans-serif;
+}
+.header .land .image img{
+    width: 500px;
+    position: absolute;
+    top: 25%;
+    right: 8% ;
+    transition: all 0.5s;
+}
+.header .land .image img:hover{
+    width: 450px;
+    position: absolute;
+    top: 20%;
+    right: 13% ;
+}
+/* end header section */
+.portofolio{
+    background-image: linear-gradient(to right , #0575e6 , #021b79);
+    height: 150vh;
+    overflow:hidden;
+    position: relative;
+}
+.portofolio .text h1{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 40px;   
+     font-family: 'Lilita One', sans-serif;
+    transition: all 0.5s;
+}
+.portofolio .text h1::before{
+    border-width: 15px;
+    border-style: solid;
+    border-color: rgb(134, 9, 9) transparent transparent transparent;
+    content: "";
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.portofolio .text h1:hover{
+    color: white;
+    font-size: 35px;
+}
+.portofolio .project{
+    width: 450px;
+    padding: 30px;
+    border: 3px dashed white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.portofolio .p1{
+    position: absolute;
+    left: 13%;
+    top:10%;
+}
+.portofolio .p2{
+    position: absolute;
+    left: 13%;
+    bottom: 0;
+}
+.portofolio .p3{
+    position: absolute;
+    right: 13%;
+    bottom: 0%;
+}
+.portofolio .p4{
+    position: absolute;
+    right: 13%;
+    top: 10%;
+}
+.portofolio .back{
+    width: 450px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+}
+.portofolio .back h1{
+    font-size: 40px;
+    font-family: 'Playpen Sans', cursive;   
+    padding: 20px;
+    margin-top: 90px;
+}
+.portofolio .back h3{
+    font-size: 35px;
+    padding: 20px;
+    font-family: 'Playpen Sans', cursive;
+}
+.portofolio .a1{
+    position: absolute;
+    left: -450px;
+    bottom:0 ;
+    transition: all 0.5s;
+    height: 350px;
+}
+.portofolio .project:hover .a1{
+    position: absolute;
+    left: 0;
+    bottom:0 ;
+    opacity: 0.9;
+}
+.portofolio .a2{
+    position: absolute;
+    left: -450px;
+    bottom:0 ;
+    transition: all 0.5s;
+    height: 350px;
+}
+.portofolio .project:hover .a2{
+    position: absolute;
+    left: 0;
+    bottom:0 ;
+    opacity: 0.9;
+}
+.portofolio .a3{
+    position: absolute;
+    right: -450px;
+    bottom:0 ;
+    transition: all 0.5s;
+    height: 350px;
+}
+.portofolio .project:hover .a3{
+    position: absolute;
+    right: 0;
+    bottom:0 ;
+    opacity: 0.9;
+}
+.portofolio .a4{
+    position: absolute;
+    right: -450px;
+    bottom:0 ;
+    transition: all 0.5s;
+    height: 350px;
+}
+.portofolio .project:hover .a4{
+    position: absolute;
+    right: 0;
+    bottom:0 ;
+    opacity: 0.9;
+}
